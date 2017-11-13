@@ -1,0 +1,24 @@
+body {
+	padding-top: 3.5rem;
+}
+
+.bg-grey {
+	background-color: #f1f1f1;
+}
+
+.plan > a > .card:hover {
+	box-shadow: 0 12px 15px 0 rgba(0,0,0,.24), 0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.plan > a:hover {
+	text-decoration: none;
+}
+
+.social-links > a {
+	color: #fff;
+}
+
+.social-links > a:hover > i {
+	background-color: white;
+	color: #444;
+}

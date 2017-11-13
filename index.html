@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Crystal Drop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Crystal Drop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#plans">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#track-status"> Track Status </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-success px-4" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- / navbar -->
+
+    <!-- home -->
+    <div id="home" class="text-center py-5 bg-dark text-white">
+      <div class="py-5">
+        <h1> Crystal Drop </h1>
+          <h3> Mineralized Drinking Water </h3>
+      </div>  
+      <div class="container">
+        <div class="row py-5">
+          <div class="col">
+            <h4> Purest </h4>
+            <p> We consistently exceed all standards as prescribed by FSAI </p>
+          </div>
+          <div class="col">
+            <h4> Safest </h4>
+            <p> Untouched by hand, each dispenser's integrity can be verified online via QR code </p>
+          </div>
+          <div class="col">
+            <h4> Easiest </h4>
+            <p> Your dispenser senses when it needs replacement and triggers delivery </p>
+          </div>
+        </div>
+        <div class="py-5">
+          <button class="btn btn-outline-success">Join Today</button>
+        </div>
+      </div>
+    </div>  
+    <!-- / home -->  
+
+    <!-- features -->
+    <div id="features">
+      <div class="container py-5">
+        <h4 class="text-center pt-4">Features</h4>
+        <div class="row py-5">
+          <div class="col-sm-6 border">
+            <img src="#" alt="purest.jpg">  
+          </div>
+          <div class="col-sm-6">
+            <h5> Purest </h5>
+            <p> CrystalDrop - Mineralized Drinking Water is processed in the most advanced plant with zero human touch. It is treated through a multiple process of purification so that the quality of water confirms or exceeds to the Packaged Drinking Water Quality Standards(PDWQS) as specified by Food Safety and Standards Authority of India (FSAI). Our water filtration process is ISI certified.</p>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-sm-6">
+            <h5> Safest </h5>
+            <p> CrystalDrop - Mineralized Drinking Water is the safest in the world. The safety comes from an inbuilt ability to verify the quality, source, mineral composition and batch level test reports of every single dispenser via a QR Code. </p>
+          </div>
+          <div class="col-sm-6 border">
+            <img src="#" alt="safest.jpg">
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-sm-6 border">
+            <img src="#" alt="easiest.jpg">
+          </div>
+          <div class="col-sm-6">
+            <h5> Easiest </h5>
+            <p> CrystalDrop - Mineralized Drinking Water comes with a way of tracking Your delivery status. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / features -->
+
+    <!-- plans -->
+    <div id="plans" class="py-5 bg-grey text-center">
+      <h4 class="py-5">Plans</h4>
+      <div class="row m-0 pb-5">
+        <div class="plan col-sm-4 mb-4" v-for="plan in plans">
+          <a href="#">
+            <div class="card p-4">
+              <h3 class="py-2">{{ plan.name }}</h3>
+              <h6 class="pb-4">{{ plan.cost_per_can }}</h6>
+              <h4 class="py-2">{{ plan.total_cost }}</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- / plans -->
+
+    <!-- testimonials -->
+    <div id="testimonials" class="py-5 bg-secondary text-white text-center">
+      <h4> Testimonials </h4>
+      <div id="carouselExampleIndicators" class="carousel slide py-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="#" alt="Person A - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="#" alt="Person B - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="#" alt="Person C - Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / testimonials -->
+
+    <!-- footer -->
+    <div id="footer" class="py-4 bg-dark text-white text-center">
+      <p> Copyright <i class="fa fa-copyright"></i> Crystal drop </p>
+      <p class="social-links"> 
+        <a href="#" class="mr-2"><i class="fa fa-twitter border rounded-circle p-2"></i></a>
+        <a href="#" class="mr-2"><i class="fa fa-pinterest border rounded-circle p-2"></i></a>
+        <a href="#" class="mr-2"><i class="fa fa-facebook border rounded-circle p-2"></i></a>
+        <a href="#" class="mr-2"><i class="fa fa-instagram border rounded-circle p-2"></i></a>
+        <a href="#" class="mr-2"><i class="fa fa-skype border rounded-circle p-2"></i></a>
+        <a href="#" class="mr-2"><i class="fa fa-dribbble border rounded-circle p-2"></i></a>
+      </p>
+    </div>
+    <!-- / footer -->
+
+    <!-- track-status -->
+    <div id="track-status" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Track Status</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Delivery status comes here</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / track-status -->
+
+    <!-- vue.js -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="index.js"></script>
+    <!-- / vue.js -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
